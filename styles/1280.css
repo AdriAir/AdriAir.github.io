@@ -18,7 +18,7 @@
 }
 
 /*INICIO DE ESTILO SEGÚN ANCHO DE PANTALLA*/
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) { */
 
     * {
         margin: 0px;
@@ -68,4 +68,4 @@
         background-color: var(--accent-extra-color);
         color: white;
     }
-}
+/* } */
