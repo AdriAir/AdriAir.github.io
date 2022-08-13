@@ -48,16 +48,16 @@ h3 {
 }
 
 #PDFBttn {
-    background: #fff;
+    background: var(--color-primary);
     border: none;
     padding: 10px 20px;
     display: inline-block;
     font-size: 15px;
     font-weight: 600;
-    width: 150px;
+    width: 200px;
     text-transform: uppercase;
     cursor: pointer;
-    transform: skew(-21deg);
+    transform: skew(-0deg);
 }
 
 #PDFBttn::before {
@@ -85,6 +85,6 @@ h3 {
 
 #PDFTextBttn {
     display: inline-block;
-    transform: skew(21deg);
+    transform: skew(0deg);
     font-family: "Press Start";
   }
