@@ -1,0 +1,71 @@
+:root {
+    /* COLORS */
+    --primary-color: #fdec94;
+    --secondary-color: #a6e7e8;
+    --secondary-extra-color: #005361;
+    --accent-color: #c5a6ff;
+    --accent-extra-color: #512260;
+}
+
+@font-face {
+    font-family: "Press Start";
+    src: url("../fonts/PressStart.ttf");
+}
+
+@font-face {
+    font-family: "Mordoto Regular";
+    src: url("../fonts/MardotoRegular.ttf");
+}
+
+/*INICIO DE ESTILO SEGÚN ANCHO DE PANTALLA*/
+@media screen and (min-width: 1280px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        font-size: 12px;
+        font-family: "Mordoto Regular";
+        color: var(--font-color1);
+        background-color: var(--primary-color);
+    }
+
+    #cv {
+        width: 70vw;
+    }
+
+    #profileImg {
+        border-radius: 100%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 18px;
+        font-family: "Press Start";
+    }
+
+    h2 {
+        font-size: 16px;
+        font-family: "Press Start";
+    }
+
+    h3 {
+        font-size: 14px;
+        font-family: "Press Start";
+    }
+
+    #PDFBttn {
+        position: relative;
+        left: calc(100vw - 200px - 12px);
+        top: 0px;
+        width: 200px;
+        height: 45px;
+        border-bottom-left-radius: 100px;
+        background-color: var(--accent-extra-color);
+        color: white;
+    }
+}

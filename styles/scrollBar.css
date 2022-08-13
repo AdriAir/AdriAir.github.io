@@ -1,0 +1,23 @@
+:root {
+    /* COLORS */
+    --primary-color: #fdec94;
+    --secondary-color: #a6e7e8;
+    --secondary-extra-color: #005361;
+    --accent-color: #c5a6ff;
+    --accent-extra-color: #512260;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 50px;
+}
