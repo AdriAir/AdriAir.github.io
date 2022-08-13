@@ -19,7 +19,7 @@
 
 body {
     font-size: 12px;
-    font-family: "Mordoto Regular";
+    font-family: "Press Start";
     color: var(--color-black);
     background-color: var(--color-white);
 }
@@ -86,4 +86,5 @@ h3 {
 #PDFTextBttn {
     display: inline-block;
     transform: skew(21deg);
+    font-family: "Press Start";
   }
