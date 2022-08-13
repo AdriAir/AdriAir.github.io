@@ -1,4 +1,4 @@
-var mantenimiento = false
+var mantenimiento = true
 if (mantenimiento) {
-    window.location.replace("adriair.github.io/pages/E503.html");
+    window.location.replace("../pages/E503.html");
 }
