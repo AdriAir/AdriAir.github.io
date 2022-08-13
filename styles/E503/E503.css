@@ -1,0 +1,89 @@
+:root {
+    /* COLORS */
+    --color-primary: #DBD1EF;
+    --color-secondary: #8143FF;
+    --color-white: #E8E8E8;
+    --color-black: #1C191A;
+
+}
+
+@font-face {
+    font-family: "Press Start";
+    src: url("../../fonts/PressStart.ttf");
+}
+
+@font-face {
+    font-family: "Mordoto Regular";
+    src: url("../../fonts/MardotoRegular.ttf");
+}
+
+body {
+    font-size: 12px;
+    font-family: "Mordoto Regular";
+    color: var(--color-black);
+    background-color: var(--color-white);
+}
+
+h1 {
+    font-size: 25px;
+    font-family: "Press Start";
+}
+
+h2 {
+    font-size: 15px;
+    font-family: "Press Start";
+}
+
+h3 {
+    font-size: 10px;
+    font-family: "Press Start";
+}
+
+.danger {
+    color: red;
+}
+
+.notification {
+    color: green;
+}
+
+#PDFBttn {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    width: 150px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transform: skew(-21deg);
+}
+
+#PDFBttn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    background: rgb(20, 20, 20);
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+#PDFBttn:hover {
+    color: #fff;
+}
+
+#PDFBttn:hover::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+#PDFTextBttn {
+    display: inline-block;
+    transform: skew(21deg);
+  }

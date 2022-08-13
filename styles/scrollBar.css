@@ -1,10 +1,9 @@
 :root {
     /* COLORS */
-    --primary-color: #fdec94;
-    --secondary-color: #a6e7e8;
-    --secondary-extra-color: #005361;
-    --accent-color: #c5a6ff;
-    --accent-extra-color: #512260;
+    --color-primary: #DBD1EF;
+    --color-secondary: #8143FF;
+    --color-white: #E8E8E8;
+    --color-black: #1C191A;
 }
 
 ::-webkit-scrollbar {
@@ -13,11 +12,11 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--secondary-color);
+    background: var(--color-primary);
     border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accent-color);
+    background: var(--color-secondary);
     border-radius: 50px;
 }
