@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-style: unset;
+    font-family: Roboto-Light, Arial;
+}
+
+root {
+    font-size: 16pt;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+header {
+    grid-area: header;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Roboto-Medium, Arial;
+}
+
+main {
+    grid-area: main;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: start;
+}
+
+header,
+main {
+    display: flex;
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url("../fonts/Roboto-Medium.ttf");
+}
