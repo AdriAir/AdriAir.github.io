@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { FeatureModule } from './modules/feature/feature.module';
+import { HomeComponent } from './modules/feature/home/home.component';
 
-const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'folder/Inbox',
-    pathMatch: 'full'
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
-  }
-];
+const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+    FeatureModule,
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}
